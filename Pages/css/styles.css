@@ -193,10 +193,11 @@ h1 {
     margin:20px; 
 }
 
+
 /*FOOTER*/
 
 .footer {
-    background-color: rgb(71, 66, 66);
+    background-image: linear-gradient(to bottom, rgb(110, 105, 105), black);
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -230,7 +231,7 @@ h1 {
 .container{
     width: 100%;
     max-width: 1200px;
-    height: 430px;
+    height: 330px;
     display:flex ;
     flex-wrap: wrap ;
     justify-content: center;
@@ -245,7 +246,13 @@ h1 {
     overflow: hidden;
     margin:20px;
     text-align: center;
-    transition: all 0.25s;
+    transition: all 2s;
+}
+
+.card:hover {
+    width: 300px;
+    height: 330px;
+    background-color: rgb(129, 123, 123);
 }
 
 /*Contacto*/
@@ -429,7 +436,7 @@ h1 {
     }
 
     .footer {
-        background-color: rgb(71, 66, 66);
+        background-image: linear-gradient(to bottom, rgb(110, 105, 105), black);
         grid-area: footer;
         display: grid;
         grid-template-columns: auto;
