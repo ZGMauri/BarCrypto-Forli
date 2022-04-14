@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -30,41 +31,43 @@
     </div>
 </div>
 <div class="principal">
-    <div class="img">
-    <h2>Comunicate con nosotros</h2>
     <form id="formulario">
-        <fieldset id="contacto">
-            <legend>Ingrese sus datos</legend>
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-            </div>
-
-            <div>
-                <label for="telefono">Telefono</label>
-                <input type="tel" id="telefono">
-            </div>
+        <h2>Comunicate con nosotros</h2>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombre Completo</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Telefono</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Telefono">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Direccion de correo</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Dejanos tus comentarios</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Enviar</button>
+        <button type="submit" class="btn btn-default">Limpiar formulario</button>
+      </form>
     
-            <div>
-                <label for="e-mail">Correo</label>
-                <input type="email" id="e-mail">    
-            </div>
-
-            <div>
-                <legend>Dejanos tus comentarios abajo</legend>
-                <textarea placeholder="" id="textoContacto"></textarea>
-            </div>
-
-            <input type="submit" value="Enviar"> <br>
-            <input type="reset" value="Limpiar formulario"> 
-        </fieldset>
-    </form>
 </div>
-</div>
+
 
 <div class="footer">
     <div class="maps">
-        <h4>Veni a visitarnos</h4>
+        <address>
+            <strong><h4>Veni a visitarnos</h4></strong><br>
+            San Francisco, CA 94103<br>
+            <abbr title="Phone">Tel</abbr> (123) 456-7890
+          </address>
+          
+          <address>
+            <strong>BarCrypto</strong><br>
+            <a href="mailto:#">Cryptobar@gmail.com</a>
+          </address>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.717307860338!2d-58.43444398543519!3d-34.586018880464124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCODER%20HOUSE%20%7C%20Coderhouse%20S.R.L.!5e0!3m2!1ses!2sbr!4v1646792688288!5m2!1ses!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="horarios">
@@ -78,5 +81,10 @@
 </div>
 
 <footer><a href="C:\Users\mauro\Desktop\CODER\Desarrollo Web\BarCrypto-Forli\repositorio\index.html">Volver al Inicio</a></footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -50,9 +50,9 @@ body {
 }
 
 h1 {
-    color: rgb(155, 9, 9);
+    color: rgb(155, 9, 9); 
     font-size: 50px;
-    font-family:monospace;
+    font-family: monospace !important; 
     display: block;
     flex-grow: 2;
     flex-shrink: 1;
@@ -88,25 +88,16 @@ h1 {
 }
 
 .menu {
-    background-color: rgb(155, 9, 9);
+    background-color: rgb(71, 66, 66);
     color: white;
     position: relative;
     text-align: start;
-    left: 10px;
     display: block;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: stretch;
     order: -1;
-}
-
-.menuDesplegable {
-    background-color: rgb(155, 9, 9);
-    color: white;
-    position: absolute;
-    margin-top: -40px;
-    left: 250px;
 }
 
 .espacio {
@@ -230,23 +221,53 @@ h1 {
 
 .container{
     width: 100%;
-    max-width: 1200px;
-    height: 330px;
+    height: 400px;
     display:flex ;
     flex-wrap: wrap ;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
+    margin-top: auto;
+    position: relative;
 }
 
 .card{
-    width: 330px;
-    height: 430px;
+    background-color: rgb(71, 66, 66);
+    width: 200px;
+    height: 300px;
     border-radius: 8px;
     box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
+    color: black;
     overflow: hidden;
-    margin:20px;
     text-align: center;
     transition: all 2s;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.botonUno {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    left: 125px;
+    bottom: 10px;
+}
+
+.botonDos {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    left: 500px;
+    bottom: 10px;
+}
+
+.botonTres {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 125px;
+    bottom: 10px;
 }
 
 .card:hover {
@@ -257,14 +278,11 @@ h1 {
 
 /*Contacto*/
 
-#contacto {
+#formulario {
     font-size: 20px;
     color: black;
-}
-
-#textoContacto {
-    height: 120px;
-    width: 40%;
+    width: 80%;
+    margin: 10px;
 }
 
 #check {display: none;}
@@ -399,7 +417,7 @@ h1 {
     .container{
         width: 100%;
         max-width: 1200px;
-        height: 430px;
+        height: auto;
         display: flex ;
         flex-wrap: wrap ;
         justify-content: center;
@@ -416,6 +434,21 @@ h1 {
         transition: all 0.25s;
     }
 
+    .botonUno {
+        left: auto;
+        bottom: 65%;
+    }
+
+    .botonDos {
+        left: auto;
+        bottom: 32%;
+    }
+
+    .botonTres {
+        right: auto;
+        bottom: -5px;
+    }
+
     #reservas {
         background-color: rgb(110, 105, 105);
         border: solid 5px white;
@@ -425,15 +458,12 @@ h1 {
         margin-left: 100px;
     }
 
-    #contacto {
+    #formulario {
         font-size: 20px;
         color: black;
+        height: 100%;
     }
     
-    #textoContacto {
-        height: 100%;
-        width: 90%;
-    }
 
     .footer {
         background-image: linear-gradient(to bottom, rgb(110, 105, 105), black);
