@@ -40,14 +40,14 @@ body {
     align-content: stretch;
 }
 
-.logo {
+/*.logo {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: center;
     order: 0;
-}
+}*/
 
 h1 {
     color: rgb(199, 71, 71);
@@ -58,6 +58,7 @@ h1 {
     flex-shrink: 1;
     flex-basis: auto;
     align-self: center;
+    text-align: center;
     order: 0;
 
 }
@@ -263,6 +264,13 @@ h1 {
     display: none;
 }
 
+.entrada {
+    height: 90vh;
+}
+
+.menuEntrada {
+    text-align: center;
+}
 
 /*CELULAR*/
 
@@ -298,7 +306,7 @@ h1 {
 
     .menuPrincipal{
         position: fixed;
-        z-index: 3;
+        z-index: 2;
         width: 90%;
         height: 50%;
         background: wheat;
