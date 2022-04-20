@@ -26,7 +26,7 @@ body {
 /*MENU*/
 
 .header {
-    background-color: black;
+    background-color: rgb(46, 2, 2);
     border-top:solid 5px rgb(155, 9, 9);
     border-bottom:solid 5px rgb(155, 9, 9);
     border-left:solid 5px rgb(155, 9, 9);
@@ -50,7 +50,7 @@ body {
 }
 
 h1 {
-    color: rgb(155, 9, 9); 
+    color: rgb(199, 71, 71);
     font-size: 50px;
     font-family: monospace !important; 
     display: block;
@@ -88,7 +88,7 @@ h1 {
 }
 
 .menu {
-    background-color: rgb(71, 66, 66);
+    background-color: black;
     color: white;
     position: relative;
     text-align: start;
@@ -101,7 +101,7 @@ h1 {
 }
 
 .espacio {
-    background-color: rgb(71, 66, 66);
+    background-color: black;
     display: block;
     flex-grow: 1;
     flex-shrink: 1;
@@ -112,7 +112,7 @@ h1 {
 }
 
 .menuPrincipal {
-    background-color: wheat;
+    background-color: black;
     font-size: xx-large;
     display: flex;
     flex-direction: row;
@@ -129,13 +129,13 @@ h1 {
 /*PRINCIPAL*/
 
 .principal {
-    background-color: rgb(71, 66, 66);
-    border-bottom:solid 5px rgb(155, 9, 9);
+    background-color: black;
+    border-bottom: solid 5px rgb(155, 9, 9);
     grid-area: principal;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
 }
   
@@ -188,7 +188,7 @@ h1 {
 /*FOOTER*/
 
 .footer {
-    background-image: linear-gradient(to bottom, rgb(110, 105, 105), black);
+    background-color: rgb(46, 2, 2);
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -315,8 +315,7 @@ h1 {
         "footer";
     }
 
-    .menu{display: none;}
-    .menuDesplegable{display: none;}
+    
     .espacio{display: none;}
 
     .checkbtn{
