@@ -1,0 +1,50 @@
+/*BARRA NAVEGACION*/
+
+.nav {
+    background-color: rgb(155, 9, 9);
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.menu {
+    background-color: black;
+    color: white;
+    position: relative;
+    text-align: start;
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: -1;
+}
+
+.espacio {
+    background-color: black;
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+
+}
+
+.menuPrincipal {
+    background-color: black;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    justify-content: space-around;
+    align-items: center;
+    order: 1;
+}

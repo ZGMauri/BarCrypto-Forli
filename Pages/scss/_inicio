@@ -1,0 +1,40 @@
+.entrada {
+    height: 90vh;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.menuEntrada {
+    text-align: center;
+}
+
+.boton {
+    width: 450px;
+    height: 400px;
+    position: absolute;
+    right: 250px;
+    top: 150px;
+    background-color: transparent;
+    color: transparent;
+    border: 0px;
+}
+
+.flecha {
+    position: absolute;
+    top: 150px;
+    right: 700px;
+}
+
+.textoEntrada {
+    text-align: center;
+    position: absolute;
+    top: 175px;
+    right: 820px;
+}
+
+.neon {
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    right: 720px;
+}

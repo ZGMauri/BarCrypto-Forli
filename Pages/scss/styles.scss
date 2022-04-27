@@ -10,6 +10,11 @@ body {
 
 $color-red:rgb(199, 71, 71);
 
+/*IMPORT*/
+
+@import "menusnav";
+@import "inicio";
+
 
 /*GRID PRINCIPAL*/
 
@@ -28,7 +33,7 @@ $color-red:rgb(199, 71, 71);
     "footer footer footer";
 }
 
-/*MENU*/
+/*HEADER*/
 
 .header {
     background-color: rgb(46, 2, 2);
@@ -71,57 +76,6 @@ h1 {
     flex-basis: auto;
     align-self: center;
     order: 0;
-}
-
-/*BARRA NAVEGACION*/
-
-.nav {
-    background-color: rgb(155, 9, 9);
-    grid-area: nav;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.menu {
-    background-color: black;
-    color: white;
-    position: relative;
-    text-align: start;
-    display: block;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: stretch;
-    order: -1;
-}
-
-.espacio {
-    background-color: black;
-    display: block;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: stretch;
-    order: 0;
-
-}
-
-.menuPrincipal {
-    background-color: black;
-    font-size: xx-large;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: stretch;
-    justify-content: space-around;
-    align-items: center;
-    order: 1;
 }
 
 /*PRINCIPAL*/
@@ -194,12 +148,23 @@ h1 {
     grid-template-areas: "espacio maps horarios";
 }
 
+.mediosPago_redesSoc {
+    margin-top: 10px;
+    text-align: center;
+    color: $color-red;
+    grid-area: espacio;
+}
+
 .maps {
+    margin-top: 10px;
+    text-align: center;
     color: $color-red;
     grid-area: maps;
 }
 
 .horarios {
+    margin-top: 10px;
+    text-align: center;
     color:$color-red;
     grid-area: horarios;
 }
@@ -251,6 +216,7 @@ h1 {
 }
 
 #check {display: none;}
+
 .checkbtn{
     font-size: 30px;
     color: #fff;
@@ -259,47 +225,6 @@ h1 {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
-
-.entrada {
-    height: 90vh;
-    background-size: 100% 100%;
-    position: relative;
-}
-
-.menuEntrada {
-    text-align: center;
-}
-
-.boton {
-    width: 450px;
-    height: 400px;
-    position: absolute;
-    right: 250px;
-    top: 150px;
-    background-color: transparent;
-    color: transparent;
-    border: 0px;
-}
-
-.flecha {
-    position: absolute;
-    top: 150px;
-    right: 700px;
-}
-
-.textoEntrada {
-    text-align: center;
-    position: absolute;
-    top: 175px;
-    right: 820px;
-}
-
-.neon {
-    text-align: center;
-    position: absolute;
-    top: 140px;
-    right: 720px;
 }
 
 /*CELULAR*/
