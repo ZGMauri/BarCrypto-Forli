@@ -86,7 +86,7 @@ h1 {
     grid-area: principal;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
 }
@@ -184,7 +184,7 @@ h1 {
 
 .container{
     height: auto;
-    display: flex ;
+    display: flex;
     flex-wrap: wrap ;
     justify-content: space-between;
     border-radius: 8px;
@@ -200,6 +200,10 @@ h1 {
     background-color: black;
     color: $color-red;
     margin: 10px;
+}
+
+.imagenes:hover {
+    background-color: white;
 }
 
 /*Contacto*/
@@ -221,6 +225,28 @@ h1 {
     margin-right: 40px;
     cursor: pointer;
     display: none;
+}
+
+/*TRAGOS*/
+
+.containerTragos {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
+    color: black;
+    overflow: hidden;
+    text-align: center;
+    align-items: baseline;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.fotoTragos {
+    background-size: 100% 100%;
 }
 
 /*CELULAR*/
