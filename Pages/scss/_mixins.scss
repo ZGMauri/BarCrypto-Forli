@@ -1,0 +1,14 @@
+@mixin paleta_colores($color){
+    //APLICANDO MAP
+    //font-size: map-get($font-size,$fuente);
+    background-color: $color-fondo;
+    color: $color-red;
+    border-color: $color-bordes;
+  }
+
+@mixin cajas_footer($margin,$texto,$color,$gridarea) {
+  margin: $margin;
+  text-align: $texto;
+  color: $color;
+  grid-area: $gridarea;
+}

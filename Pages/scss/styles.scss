@@ -2,19 +2,22 @@
     text-decoration: dashed;
 }
 
-body {
-    background-color: rgb(71, 66, 66);
-}
-
-/*VARIABLES*/
-
-$color-red:rgb(199, 71, 71);
-
 /*IMPORT*/
 
 @import "menusnav";
 @import "inicio";
+@import "mixins";
 
+/*VARIABLES*/
+
+$color-red:rgb(199, 71, 71);
+$color-fondo:black;
+$color-bordes:rgb(155,9,9);
+
+
+body {
+    background-color: $color-fondo;
+}
 
 /*GRID PRINCIPAL*/
 
@@ -37,10 +40,10 @@ $color-red:rgb(199, 71, 71);
 
 .header {
     background-color: rgb(46, 2, 2);
-    border-top:solid 5px rgb(155, 9, 9);
-    border-bottom:solid 5px rgb(155, 9, 9);
-    border-left:solid 5px rgb(155, 9, 9);
-    border-right:solid 5px rgb(155, 9, 9);
+    border-top:solid 5px $color-bordes;
+    border-bottom:solid 5px $color-bordes;
+    border-left:solid 5px $color-bordes;
+    border-right:solid 5px $color-bordes;
     grid-area: header;
     display: flex;
     flex-direction: row;
@@ -81,8 +84,8 @@ h1 {
 /*PRINCIPAL*/
 
 .principal {
-    background-color: black;
-    border-bottom: solid 5px rgb(155, 9, 9);
+    background-color: $color-fondo;
+    border-bottom: solid 5px $color-bordes;
     grid-area: principal;
     display: flex;
     flex-direction: row;
@@ -149,24 +152,15 @@ h1 {
 }
 
 .mediosPago_redesSoc {
-    margin-top: 10px;
-    text-align: center;
-    color: $color-red;
-    grid-area: espacio;
+    @include cajas_footer (10px,center,$color-red,espacio);
 }
 
 .maps {
-    margin-top: 10px;
-    text-align: center;
-    color: $color-red;
-    grid-area: maps;
+    @include cajas_footer (10px,center,$color-red,maps);
 }
 
 .horarios {
-    margin-top: 10px;
-    text-align: center;
-    color:$color-red;
-    grid-area: horarios;
+    @include cajas_footer (10px,center,$color-red,horarios);
 }
 
 /*Reservas*/
@@ -174,10 +168,8 @@ h1 {
 #reservas {
     background-color: rgb(110, 105, 105);
     border: solid 5px white;
-    margin-top: 50px;
-    width: 30%;
+    width: 80%;
     color: black;
-    margin-left: 200px;
 }
 
 /*Merchandising*/
@@ -230,19 +222,9 @@ h1 {
 /*TRAGOS*/
 
 .containerTragos {
-    height: auto;
+    @extend.container;
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 8px;
-    box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-    color: black;
-    overflow: hidden;
-    text-align: center;
     align-items: baseline;
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .fotoTragos {
