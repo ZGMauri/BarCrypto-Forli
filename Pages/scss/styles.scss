@@ -14,6 +14,12 @@ $color-red:rgb(199, 71, 71);
 $color-fondo:black;
 $color-bordes:rgb(155,9,9);
 
+/*MAPA*/
+
+$imagenes: (
+    colorNormal: black,
+    colorHover: white,
+);
 
 body {
     background-color: $color-fondo;
@@ -189,13 +195,13 @@ h1 {
 }
 
 .imagenes {
-    background-color: black;
+    background-color: map-get($imagenes, colorNormal);
     color: $color-red;
     margin: 10px;
 }
 
 .imagenes:hover {
-    background-color: white;
+    background-color: map-get($imagenes, colorHover);
 }
 
 /*Contacto*/

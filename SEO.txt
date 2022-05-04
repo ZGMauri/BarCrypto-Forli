@@ -1,0 +1,28 @@
+En el archivo index.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:
+“Bienvenidos a un bar diferente, ambientado en criptomonedas, donde podras usarlas como medio de pagos y aparte comprar merchandising unico relacionado a ese mundo"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "HTML, Bar, Crypto, Criptomoneds, BTC, ETH, NFT, Tragos, Comidas"
+
+En el archivo paginaPrincipal.html sumé el SEO con las siguientes características:
+Descripcion:"Bienvenidos a un bar diferente, ambientado en criptomonedas, donde podras usarlas como medio de pagos y aparte comprar merchandising unico relacionado a ese mundo"
+Palabras claves:"HTML, Bar, Crypto, Criptomoneds, BTC, ETH, NFT, Tragos, Comidas"
+
+En el archivo tragos.html sumé el SEO con las siguientes características:
+Descripcion:"La seccion de tragos del bar, con tragos de autor, clasicos, algunos elaborados y otros basicos que nunca pueden faltar"
+Palabras claves:"HTML, Bar, Crypto, Criptomoneds, BTC, ETH, NFT, Tragos, Comidas"
+
+En los archivos de merchandising sumé el SEO con las siguientes características:
+Descripcion:"Compra tu remera, gorro o llavero para venir a visitarnos y ser parte de esta comunidad"
+Palabras claves:"HTML, Bar, Crypto, Criptomoneds, BTC, ETH, Merchandising, Llaveros, Gorros, Remeas, Perzonalizadas"
+
+En los archivos de contacto.html sumé el SEO con las siguientes características:
+Descripcion:"Si tenes alguna duda o sugerencia o simplemente queres dejarnos un comentario, no dudes ponerte en contacto con nosotros"
+Palabras claves:"HTML, Bar, Crypto, Criptomoneds, BTC, ETH, Contacto, Sugerencias"
+
+En los archivos de reserva.html sumé el SEO con las siguientes características:
+Descripcion:"Hace tu reserva, con la fecha en la que quieras venir y te aseguramos tu espacio"
+Palabras claves:"HTML, Bar, Crypto, Criptomoneds, BTC, ETH, Reservas, Mesas"
+
+En los archivos de sobreNosotros.html sumé el SEO con las siguientes características:
+Descripcion:"Informacion de interes sobre nosotros"
+Palabras claves:"HTML, Bar, Crypto, Criptomoneds, BTC, ETH, Informacion, SobreNosotros, Resumen"
