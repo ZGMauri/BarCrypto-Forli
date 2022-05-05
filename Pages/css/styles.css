@@ -82,6 +82,27 @@
   top: 140px;
   right: 720px; }
 
+@media only screen and (max-width: 768px) {
+  .menucelu {
+    font-size: xx-large; }
+  .textoEntrada {
+    top: 0px;
+    right: 0px;
+    text-align: center; }
+  .flecha {
+    overflow: hidden; }
+  .neon {
+    top: 20px;
+    right: 0px;
+    width: 100%;
+    text-align: center; }
+  .boton {
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%; } }
+
 /*VARIABLES*/
 /*MAPA*/
 body {
@@ -158,9 +179,10 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin: 20px;
+  margin: 40px;
   color: #9b0909;
-  font-family: 'Roboto Mono', monospace; }
+  font-family: 'Roboto Mono', monospace;
+  font-size: x-large; }
 
 .img {
   margin-top: auto;
@@ -428,12 +450,15 @@ h1 {
     grid-area: footer;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: "maps" "horarios";
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "mediospago" "maps" "horarios";
     justify-content: center; }
   .maps {
     color: #c74747;
     grid-area: maps; }
   .horarios {
     color: #c74747;
-    grid-area: horarios; } }
+    grid-area: horarios; }
+  .mediosPago_redesSoc {
+    color: #c74747;
+    grid-area: mediospago; } }

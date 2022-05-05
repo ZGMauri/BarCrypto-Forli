@@ -38,3 +38,35 @@
     top: 140px;
     right: 720px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .menucelu {
+        font-size: xx-large;
+    }
+
+    .textoEntrada {
+        top: 0px;
+        right: 0px;
+        text-align: center;
+    }
+
+    .flecha {
+        overflow: hidden;
+    }
+
+    .neon {
+        top: 20px;
+        right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .boton {
+        top: 0px;
+        right: 0px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
