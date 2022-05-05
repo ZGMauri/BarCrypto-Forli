@@ -233,8 +233,53 @@ h1 {
     align-items: baseline;
 }
 
+.containerCervezas {
+    @extend.container;
+    width: 100%;
+    align-items: baseline;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.containerComidasR {
+    @extend.container;
+    width: 60%;
+    align-items: baseline;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .fotoTragos {
     background-size: 100% 100%;
+}
+
+.fotoCervezas {
+    background-size: cover;
+}
+
+.fotoComidasR {
+    background-size: 100% 100%;
+}
+
+.tituloCervezas {
+    text-align: center;
+    font-size: 50px;
+    border: solid 5px #614c35;
+    background-color: #C19A6B;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+
+.tituloTragos {
+    @extend.tituloCervezas;
+    background-color: #7F1734;
+    border: solid 5px #F7E7CE;
+}
+
+.tituloComidasR {
+    @extend.tituloCervezas;
+    background-color: #C23B22;
+    border: solid 5px #FADFAD;
 }
 
 /*CELULAR*/

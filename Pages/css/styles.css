@@ -224,7 +224,7 @@ h1 {
   color: black; }
 
 /*Merchandising*/
-.container, .containerTragos {
+.container, .containerTragos, .containerCervezas, .containerComidasR {
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -269,8 +269,42 @@ h1 {
   width: 80%;
   align-items: baseline; }
 
+.containerCervezas {
+  width: 100%;
+  align-items: baseline;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.containerComidasR {
+  width: 60%;
+  align-items: baseline;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
 .fotoTragos {
   background-size: 100% 100%; }
+
+.fotoCervezas {
+  background-size: cover; }
+
+.fotoComidasR {
+  background-size: 100% 100%; }
+
+.tituloCervezas, .tituloTragos, .tituloComidasR {
+  text-align: center;
+  font-size: 50px;
+  border: solid 5px #614c35;
+  background-color: #C19A6B;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100%; }
+
+.tituloTragos {
+  background-color: #7F1734;
+  border: solid 5px #F7E7CE; }
+
+.tituloComidasR {
+  background-color: #C23B22;
+  border: solid 5px #FADFAD; }
 
 /*CELULAR*/
 @media only screen and (max-width: 768px) {
@@ -362,7 +396,7 @@ h1 {
     box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     margin: 20px; }
-  .container, .containerTragos {
+  .container, .containerTragos, .containerCervezas, .containerComidasR {
     width: 100%;
     max-width: 1200px;
     height: auto;

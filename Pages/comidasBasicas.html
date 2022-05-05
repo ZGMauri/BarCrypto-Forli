@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <title>BAR CRYPTO</title>
-    <meta name="description" content="Bienvenidos a un bar diferente, ambientado en criptomonedas, donde podras usarlas como medio de pagos y aparte comprar merchandising unico relacionado a ese mundo">
+    <title>COMIDA RAPIDA</title>
+    <meta name="description" content="Seccion de comida rapida, donde encontraras picadas, hambuerguesas y pizzas">
     <meta name="keywords" content="HTML, Bar, Crypto, Criptomoneds, BTC, ETH, NFT, Tragos, Comidas">
 </head>
 <body>
@@ -24,7 +24,8 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-    <div class="menuPrincipal">           
+    <div class="menuPrincipal"> 
+      <a class="animate__animated animate__zoomIn" href="pagPrincipal.html" style="color: rgb(199, 71, 71)">Inicio</a>          
         <a class="animate__animated animate__zoomIn" href="sobreNosotros.html" style="color: rgb(199, 71, 71)">Sobre Nosotros</a>
         <a class="animate__animated animate__zoomIn" href="reservas.html" style="color: rgb(199, 71, 71);">Reservas</a>             
         <a class="animate__animated animate__zoomIn" href="merchandising.html" style="color: rgb(199, 71, 71)">Merchandising</a>
@@ -51,28 +52,38 @@
 <div class="espacio"></div>
 </div>
 
-<div class="principal">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
-            <img src="Img/Bar.jpg" height="800" width="1200" class="d-block w-100" alt="laBarra">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="Img/bar2.jpg" height="800" width="1200" class="d-block w-100" alt="barLleno">
-          </div>
-          <div class="carousel-item">
-            <img src="Img/bar3.jpg" height="800" width="1200" class="d-block w-100" alt="barman">
-          </div>
+<div class="principal fotoComidasR" style="background-image: url('Img/mesas.jpg');">
+    <h2 class="tituloComidasR" style="color: #FADFAD;">C O M I D A S</h2>
+<div class="containerComidasR">
+    <div class="card imagenes" style="width: 16rem;">
+        <div class="card-body">
+          <h5 class="card-text">PIZZAS</h5>
+          <i><p class="card-text"></p>- Clasica con muzzarella</i>
+          <i><p class="card-text"></p>- Muzzarella, tomate y albahaca</i>
+          <i><p class="card-text"></p>- Muzzarella, huevo, jamon y panceta</i>
+          <i><p class="card-text"></p>- Muzzarella, jamon y aceitunas</i>
+          <i><p class="card-text"></p>- Cuatro quesos</i>
+          <i><p class="card-text"></p>- Muzzarella y pepperoni</i>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </div> 
+    <div class="card imagenes" style="width: 16rem;">
+        <div class="card-body">
+          <h5 class="card-text">HAMBURGUESAS</h5>
+          <i><p class="card-text">- Doble carne con cheddar</p></i>
+          <i><p class="card-text">- Doble carne con cheddar y panceta</p></i>
+          <i><p class="card-text">- Clasica con lechuga, tomate y cebolla</p></i>
+          <i><p class="card-text">- Clasica con lechuga, tomate, cebolla, huevo y jamon</p></i>
+        </div>
+    </div>
+    <div class="card imagenes" style="width: 16rem;">
+        <div class="card-body">
+          <h5 class="card-text">PICADAS</h5>
+          <i><p class="card-text">- Clasica con fiambres, aceitunas, papas fritas y mix de frutos secos</p></i>
+          <i><p class="card-text">- De mariscos, miniaturas de pescado, rabas de calamar, mejillones y langostinos</p></i>
+          <i><p class="card-text">- Tablas de pizzas</p></i>
+        </div>
+    </div>
+</div>
 </div>
 
 
