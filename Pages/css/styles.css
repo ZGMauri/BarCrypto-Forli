@@ -83,6 +83,8 @@
   right: 720px; }
 
 @media only screen and (max-width: 768px) {
+  .entrada {
+    margin-top: -90px; }
   .menucelu {
     font-size: xx-large; }
   .textoEntrada {
@@ -170,46 +172,10 @@ h1 {
   align-items: center; }
 
 .caja1 {
-  display: block;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: -1;
-  border-radius: 8px;
-  box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
   margin: 40px;
-  color: #9b0909;
+  color: #c74747;
   font-family: 'Roboto Mono', monospace;
-  font-size: x-large; }
-
-.img {
-  margin-top: auto;
-  margin-bottom: auto;
-  display: block;
-  width: 500px;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px; }
-
-.caja3 {
-  display: block;
-  flex-grow: 2;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 1;
-  border-radius: 8px;
-  box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 20px; }
+  font-size: large; }
 
 /*FOOTER*/
 .footer {
@@ -347,7 +313,7 @@ h1 {
   .nav {
     grid-area: nav;
     background-color: #9b0909;
-    height: 20px; }
+    height: 0px; }
   .menuPrincipal {
     position: fixed;
     z-index: 2;
@@ -378,46 +344,9 @@ h1 {
     height: auto;
     align-items: center; }
   .caja1 {
-    display: block;
-    width: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: -1;
-    border-radius: 8px;
-    box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     margin: 20px;
-    color: #9b0909;
+    color: #c74747;
     font-family: 'Roboto Mono', monospace; }
-  .img {
-    margin-top: auto;
-    margin-bottom: auto;
-    display: block;
-    width: 300px;
-    max-height: 300px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px; }
-  .caja3 {
-    display: block;
-    width: 300px;
-    flex-grow: 2;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 1;
-    border-radius: 8px;
-    box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px; }
   .container, .containerTragos, .containerCervezas, .containerComidasR {
     width: 100%;
     max-width: 1200px;
