@@ -366,10 +366,8 @@ h1 {
   #reservas {
     background-color: #6e6969;
     border: solid 5px white;
-    margin-top: 50px;
-    width: 50%;
     color: black;
-    margin-left: 100px; }
+    width: 100%; }
   #formulario {
     font-size: 20px;
     color: black;
