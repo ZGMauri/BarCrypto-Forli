@@ -3,8 +3,16 @@ let resultado = 8;
 let meses = 10;
 let nombre;
 let cuota;
+
 function sumar (numerouno, numerodos) {
     return numerouno * numerodos
+}
+
+function CambioDePrecio (APrecio) {
+    for(let i=0; i<APrecio.lenght; i++) {
+        let cambio = [i];
+        cambio.innerText = "20 USDT";
+      }
 }
 
 //Declaracion de clases y objetos
@@ -130,5 +138,28 @@ for (var producto of arrayProducto){
         console.log (producto.precio);
     }
 }
+
+//AGREGANDO PRODUCTOS SECCION MERCHANDISING
+const NuevosProductos = [
+    { nombre:"Remera Solana", descripcion: "Remera perzonalizada Solana", precio: 15},
+    { nombre:"Remera Litecoin", descripcion: "Remera perzonalizada Litecoin", precio: 15},
+    { nombre:"Remera BNB", descripcion: "Remera perzonalizada Binance", precio: 15}
+];
+
+for (const Prod of NuevosProductos) {
+    let NuevaRemera = document.createElement("div");
+    NuevaRemera.innerHTML = `<h5> ${Prod.nombre} </h5>
+                            <p> ${Prod.descripcion} </p>
+                            <a> ${Prod.precio} </a>`;
+    document.container.appendChild(container);
+}
+
+//MODIFICANDO PRECIOS LLAMANDO A UNA FUNCION    
+const ArregloPreciosOLD = [document.querySelector(".container a")];
+const ArregloPreciosNEW = [];
+ArregloPreciosNEW = CambioDePrecio(ArregloPreciosOLD);
+console.log(ArregloPreciosNEW);
+
+
 
 
