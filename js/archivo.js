@@ -151,7 +151,7 @@ for (const Prod of NuevosProductos) {
     NuevaRemera.innerHTML = `<h5> ${Prod.nombre} </h5>
                             <p> ${Prod.descripcion} </p>
                             <a> ${Prod.precio} </a>`;
-    document.container.appendChild(container);
+    document.container.appendChild(NuevaRemera);
 }
 
 //MODIFICANDO PRECIOS LLAMANDO A UNA FUNCION    
