@@ -128,6 +128,15 @@
 </div>
 </div>
 
+<script>
+const btnAgregar = document.querySelector(".btn-primary");
+let contador = 1;
+  
+btnAgregar.addEventListener("click", () => {
+    alert("Agregaste un elemento al carrito. Tenes "+ contador + " elementos en el carrito");
+    contador++;
+});
+</script>
 
 <div class="footer">
     <div class="mediosPago_redesSoc">

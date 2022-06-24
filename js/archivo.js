@@ -160,6 +160,9 @@ const ArregloPreciosNEW = [];
 ArregloPreciosNEW = CambioDePrecio(ArregloPreciosOLD);
 console.log(ArregloPreciosNEW);
 
+//EL EVENTO ESTA PROGRAMADO COMO UN SCRIPT EN MERCHANDISING.HTML
+
+
 
 
 
