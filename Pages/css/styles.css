@@ -168,14 +168,8 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; }
-
-.caja1 {
-  margin: 40px;
-  color: #c74747;
-  font-family: 'Roboto Mono', monospace;
-  font-size: large; }
 
 /*FOOTER*/
 .footer {
@@ -219,7 +213,7 @@ h1 {
   justify-content: space-between;
   border-radius: 8px;
   box-shadow: 0 2px 2 px rgba(0, 0, 0, 0.2);
-  color: black;
+  color: #c74747;
   overflow: hidden;
   text-align: center;
   margin-top: 40px;
@@ -230,9 +224,9 @@ h1 {
   color: #c74747;
   margin: 10px; }
 
-.imagenes:hover {
-  background-color: white; }
-
+/*.imagenes:hover {
+    background-color: map-get($imagenes, colorHover);
+}*/
 /*Contacto*/
 #formulario {
   font-size: 20px;
@@ -343,10 +337,6 @@ h1 {
     justify-content: space-between;
     height: auto;
     align-items: center; }
-  .caja1 {
-    margin: 20px;
-    color: #c74747;
-    font-family: 'Roboto Mono', monospace; }
   .container, .containerTragos, .containerCervezas, .containerComidasR {
     width: 100%;
     max-width: 1200px;
