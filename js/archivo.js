@@ -1,138 +1,3 @@
-//Variables y funciones
-/*let resultado = 8;
-let meses = 10;
-let nombre;
-let cuota;
-
-function sumar (numerouno, numerodos) {
-    return numerouno * numerodos
-}
-
-//Declaracion de clases y objetos
-class Persona { 
-    constructor (nombre,tipoSuscripcion){
-        this.nombre=nombre.toUpperCase();
-        this.tipoSuscripcion=tipoSuscripcion.toUpperCase();
-        this.NFT=false;
-    }    
-}
-
-class Producto {
-    constructor (nombre,precio,cantidad,socio) {
-        this.nombre=nombre;
-        this.precio=parseFloat(precio);
-        this.cantidad=cantidad;
-        this.socio=false;
-        this.stock=true;
-    }
-
-restarDescuento () {
-    return this.precio * 0.20;
-}
-
-restarDescuentoVIP () {
-    return this.precio * 0.30;
-}    
-
-vender () {
-    return this.stock = false;
-}
-}
-
-//Arreglos
-let arrayPersona = [];
-let arrayProducto = [];
-
-//Verificando si el cliente es socio y posee un NFT del sitio
-let socio = prompt ("¿Ya sos socio? S/N").toUpperCase();
-
-while (socio!="S" && socio!="N"){
-    socio= prompt ("Ingreso un valor incorrecto. ¿Ya sos socio? S/N").toUpperCase();
-}
-
-while (socio =="N"){
-    cuota = prompt ("Eliga una suscripcion. Anual (A), mensual (M).").toUpperCase();
-
-    while (cuota!="A" && cuota!="M"){
-        cuota= prompt ("Ingreso un valor incorrecto, vuelva a ingresar el tipo de suscripcion: Anual (A), mensual (M)").toUpperCase();
-    }
-
-    if (cuota=="M") {
-        alert ("El precio de la suscripcion mensual son 8 USD por mes");
-        resultado = 8;
-        socio = "S";
-        alert ("Debera abonar: " + resultado);
-        nombre = prompt ("Escriba su nombre");
-        arrayPersona.push(new Persona (nombre, cuota));
-    }
-    else {
-        alert ("Eligio la suscripcion anual, se le aplica una promocion de 2 meses de regalo.");
-        resultado = sumar (resultado,meses);
-        socio = "S";
-        alert ("Debera abonar: " + resultado);
-        nombre = prompt ("Escriba su nombre");
-        arrayPersona.push(new Persona (nombre, cuota));
-    }
-
-} 
-
-alert ("¡GRACIAS POR ELEGIRNOS!");
-let controlNFT=prompt("¿Sabias que ademas podes acceder a beneficios exclusivos con tu NFT? Presiona 0 si ya tenes el tuyo, 1 si te gustaria adquirir uno o 2 para salir.");
-switch (controlNFT) {
-    case "0":
-        arrayPersona[0].NFT=true;
-        break;
-    case "1":
-        alert("Genial, seras redirigido a la tienda donde podes adquirir uno"); 
-        break;
-    case "2":
-        arrayPersona[0].NFT=false; 
-        break;
-}
-alert(JSON.stringify(arrayPersona));
-
-//Agregando productos al carrito
-do {
-    let seleccionar = prompt("Indique el nombre del producto que desea comprar o ESC para salir").toUpperCase();
-    if (seleccionar==="ESC"){
-        break;
-    }
-    else{
-        let nombreP=seleccionar;
-        let cantidadP=prompt("Ingrese la cantidad que quiere comprar");
-        let precioP=10;
-        arrayProducto.push(new Producto(nombreP,precioP,cantidadP));
-    }
-}while (seleccionar!="ESC")
-
-console.log(arrayProducto);
-
-for (let producto of arrayProducto){
-    document.write ("<ul><li>Nombre:" + producto.nombre + "</li>");
-    document.write ("<li>Cantidad:" + producto.cantidad + "</li>");
-    document.write ("<li>Precio:" + producto.precio + "</li>");
-    if (socio=="S" && NFT==true){
-        document.write ("<li>Precio con descuento VIP es:" + producto.restarDescuentoVIP + "</li></ul>");
-        console.log (producto.nombre);
-        console.log (producto.cantidad);
-        console.log (producto.precio);
-        console.log (producto.restarDescuentoVIP);
-    }
-    else if (socio=="S" && NFT==false){
-        document.write ("<li>Precio con descuento socio es:" + producto.restarDescuento + "</li></ul>");
-        console.log (producto.nombre);
-        console.log (producto.cantidad);
-        console.log (producto.precio);
-        console.log (producto.restarDescuento);
-    }
-    else {
-        console.log (producto.nombre);
-        console.log (producto.cantidad);
-        console.log (producto.precio);
-    }
-}
-
-*/
 //CARRITO DE COMPRAS -- REMERAS
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
@@ -152,10 +17,10 @@ cards.addEventListener('click', e => addCarrito(e))
 //items.addEventListener('click', e => accionBotones())
 
 
-const pintarCards = producto => {
+const pintarCards = arraysProd => {
 	
-	for (const key in producto) {
-	    const element = producto[key];
+	for (const key in arraysProd) {
+	    const element = arraysProd[key];
 	    
 	    templateCard.querySelector('h5').textContent = element.nombre
 	    templateCard.querySelector('p').textContent = element.precio
@@ -258,16 +123,12 @@ const accionBotones = () => {
 			const producto = carrito[btn.dataset.id]
 			producto.cantidad--
 			
-			if(producto.cantidad === 0) {
-				delete carrito[btn.dataset.id]
-			} else {
-				carrito[btn.dataset.id] = { ...producto}
-			}
+			(producto.cantidad === 0) ? delete carrito[btn.dataset.id] : carrito[btn.dataset.id] = { ...producto}
+
 			pintarCarrito()
 		})
 	})
 	
-
 }
 
 const fetchData = () => {
@@ -281,5 +142,20 @@ const fetchData = () => {
 	  6: { nombre: "Remera Evolucion", precio: 15,"img": "../Pages/Img/evolution.jpg" },
 	};
 
-	pintarCards(productos)	
+	let productosGorros = {
+		7: { nombre: "Gorro BTC", precio: 8,"img": "../Pages/Img/gorroB.jpg" },
+		8: { nombre: "Gorro ADA", precio: 8,"img": "../Pages/Img/adagorro.jpg" },
+		9: { nombre: "Gorro ETH", precio: 8,"img": "../Pages/Img/ethgorro.jpg" },
+		10: { nombre: "Gorro HODL", precio: 8,"img": "../Pages/Img/hodl.jpg" },
+		11: { nombre: "Gorro CRYPTO", precio: 8,"img": "../Pages/Img/cryptogorro.jpg" },
+		12: { nombre: "Gorro SHIBA", precio: 8,"img": "../Pages/Img/GorroSH.jpg" },
+	  };
+
+	let productosLlaveros = {
+		13: { nombre: "LLavero ETH", precio: 5,"img": "../Pages/Img/llaverosEth.jpg" },
+		14: { nombre: "Llavero BTC", precio: 5,"img": "../Pages/Img/llaverosB.jpg" },
+	  };
+  
+	let arraysProd = {...productos, ...productosGorros, ...productosLlaveros}
+	pintarCards(arraysProd)	
 }
