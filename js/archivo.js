@@ -3,6 +3,7 @@ const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
 
+
 const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
@@ -10,7 +11,12 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
-document.addEventListener('DOMContentLoaded', () => { fetchData() })
+document.addEventListener('DOMContentLoaded', () => { fetchData()
+	if (localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito()
+    } 
+})
 
 cards.addEventListener('click', e => addCarrito(e))
 
@@ -75,6 +81,8 @@ const pintarCarrito = () => {
 
 	pintarFooter()
 	accionBotones()
+
+	localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 const pintarFooter = () => {
@@ -102,7 +110,39 @@ const pintarFooter = () => {
 		pintarCarrito()
 	})
 
+	const btnFinalizarCarrito = document.getElementById('finalizar-compra')
+	btnFinalizarCarrito.addEventListener('click', () => {
+		swal({
+			title: "Genial, tu carrito se actualizo!",
+			text: "Seras redirigido para finalizar tu compra",
+			icon: "success",
+			buttons: true,
+			dangerMode: true,
+		})
+		  .then((willDelete) => {
+			if (willDelete) {
+				window.location.href = "carrito.html"
+			}
+		});		
+	})
+
+	/*const btnFinalizarCompra = document.getElementById('finalizar')
+	btnFinalizarCompra.addEventListener('click', () => {
+		swal({
+			title: "Muchas gracias!",
+  			text: "",
+			icon: "success",
+		})
+		.then((willDelete) => {
+			if (willDelete) {
+				window.location.href = "merchandising.html"
+				localStorage.clear()
+			}
+		});
+	})*/
+
 }
+
 
 
 const accionBotones = () => {
@@ -159,3 +199,8 @@ const fetchData = () => {
 	let arraysProd = {...productos, ...productosGorros, ...productosLlaveros}
 	pintarCards(arraysProd)	
 }
+
+
+//FINALIZANDO COMPRA
+
+
