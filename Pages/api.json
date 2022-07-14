@@ -1,38 +1,38 @@
 [
-    {
-      "precio": 500,
-      "id": 1,
-      "title": "Café",
-      "thumbnailUrl": "https://picsum.photos/id/0/600"
+    { 
+      "id":1,
+      "nombre": "Remera BTC", 
+      "precio": 15,
+      "img": "../Pages/Img/btc.jpg"
     },
     {
-      "precio": 300,
-      "id": 2,
-      "title": "Pizza",
-      "thumbnailUrl": "https://picsum.photos/id/10/600"
+      "id":2,
+      "nombre": "Remera DOT", 
+      "precio": 15,
+      "img": "../Pages/Img/dot.jpg"
     },
     {
-      "precio": 100,
-      "id": 3,
-      "title": "Agua",
-      "thumbnailUrl": "https://picsum.photos/id/20/600"
+      "id":3,
+      "nombre": "Remera ETH ", 
+      "precio": 15,
+      "img": "../Pages/Img/eth.jpg"
     },
     {
-      "precio": 50,
-      "id": 4,
-      "title": "Sandía",
-      "thumbnailUrl": "https://picsum.photos/id/30/600"
+      "id":4,
+      "nombre": "Remera ADA", 
+      "precio": 15,
+      "img": "../Pages/Img/cardano.jpg"
     },
     {
-      "precio": 10,
-      "id": 5,
-      "title": "Mango",
-      "thumbnailUrl": "https://picsum.photos/id/40/600"
+      "id":5,
+      "nombre": "Remera SOL", 
+      "precio": 15,
+      "img": "../Pages/Img/solana.jpg"
     },
     {
-      "precio": 150,
-      "id": 6,
-      "title": "Chela",
-      "thumbnailUrl": "https://picsum.photos/id/50/600"
+      "id":6,
+      "nombre": "Remera Evolucion", 
+      "precio": 15,
+      "img": "../Pages/Img/evolution.jpg"
     }
   ]

@@ -11,7 +11,7 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
-document.addEventListener('DOMContentLoaded', () => { fetchData()
+document.addEventListener('DOMContentLoaded', () => { DataMan()
 	if (localStorage.getItem('carrito')) {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito()
@@ -22,6 +22,13 @@ cards.addEventListener('click', e => addCarrito(e))
 
 //items.addEventListener('click', e => accionBotones())
 
+
+const DataMan = async () => {
+    const res = await fetch('api.json')
+    const data = await res.json()
+    // console.log(data)
+    pintarCards(data)
+}
 
 const pintarCards = arraysProd => {
 	
@@ -126,7 +133,7 @@ const pintarFooter = () => {
 		});		
 	})
 
-	/*const btnFinalizarCompra = document.getElementById('finalizar')
+	const btnFinalizarCompra = document.getElementById('finalizar')
 	btnFinalizarCompra.addEventListener('click', () => {
 		swal({
 			title: "Muchas gracias!",
@@ -139,7 +146,7 @@ const pintarFooter = () => {
 				localStorage.clear()
 			}
 		});
-	})*/
+	})
 
 }
 
@@ -171,7 +178,7 @@ const accionBotones = () => {
 	
 }
 
-const fetchData = () => {
+/*const fetchData = () => {
 
 	let productos = {
 	  1: { nombre: "Remera BTC", precio: 15,"img": "../Pages/Img/btc.jpg" },
@@ -198,7 +205,7 @@ const fetchData = () => {
   
 	let arraysProd = {...productos, ...productosGorros, ...productosLlaveros}
 	pintarCards(arraysProd)	
-}
+}*/
 
 
 //FINALIZANDO COMPRA
