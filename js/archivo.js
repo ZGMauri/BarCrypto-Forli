@@ -11,7 +11,7 @@ const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
-document.addEventListener('DOMContentLoaded', () => { DataMan()
+document.addEventListener('DOMContentLoaded', () => { fetchData()
 	if (localStorage.getItem('carrito')) {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito()
@@ -23,10 +23,9 @@ cards.addEventListener('click', e => addCarrito(e))
 //items.addEventListener('click', e => accionBotones())
 
 
-const DataMan = async () => {
+const fetchData = async () => {
     const res = await fetch('api.json')
     const data = await res.json()
-    // console.log(data)
     pintarCards(data)
 }
 
@@ -178,36 +177,5 @@ const accionBotones = () => {
 	
 }
 
-/*const fetchData = () => {
-
-	let productos = {
-	  1: { nombre: "Remera BTC", precio: 15,"img": "../Pages/Img/btc.jpg" },
-	  2: { nombre: "Remera DOT", precio: 15,"img": "../Pages/Img/dot.jpg" },
-	  3: { nombre: "Remera ETH", precio: 15,"img": "../Pages/Img/eth.jpg" },
-	  4: { nombre: "Remera ADA", precio: 15,"img": "../Pages/Img/cardano.jpg" },
-	  5: { nombre: "Remera SOL", precio: 15,"img": "../Pages/Img/solana.jpg" },
-	  6: { nombre: "Remera Evolucion", precio: 15,"img": "../Pages/Img/evolution.jpg" },
-	};
-
-	let productosGorros = {
-		7: { nombre: "Gorro BTC", precio: 8,"img": "../Pages/Img/gorroB.jpg" },
-		8: { nombre: "Gorro ADA", precio: 8,"img": "../Pages/Img/adagorro.jpg" },
-		9: { nombre: "Gorro ETH", precio: 8,"img": "../Pages/Img/ethgorro.jpg" },
-		10: { nombre: "Gorro HODL", precio: 8,"img": "../Pages/Img/hodl.jpg" },
-		11: { nombre: "Gorro CRYPTO", precio: 8,"img": "../Pages/Img/cryptogorro.jpg" },
-		12: { nombre: "Gorro SHIBA", precio: 8,"img": "../Pages/Img/GorroSH.jpg" },
-	  };
-
-	let productosLlaveros = {
-		13: { nombre: "LLavero ETH", precio: 5,"img": "../Pages/Img/llaverosEth.jpg" },
-		14: { nombre: "Llavero BTC", precio: 5,"img": "../Pages/Img/llaverosB.jpg" },
-	  };
-  
-	let arraysProd = {...productos, ...productosGorros, ...productosLlaveros}
-	pintarCards(arraysProd)	
-}*/
-
-
-//FINALIZANDO COMPRA
 
 

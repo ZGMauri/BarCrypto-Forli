@@ -34,5 +34,53 @@
       "nombre": "Remera Evolucion", 
       "precio": 15,
       "img": "../Pages/Img/evolution.jpg"
+    },
+    { 
+      "id":7,
+      "nombre": "Gorro BTC", 
+      "precio": 8,
+      "img": "../Pages/Img/gorroB.jpg" 
+    },
+    { 
+      "id":8,
+      "nombre": "Gorro ADA",
+      "precio": 8,
+      "img": "../Pages/Img/adagorro.jpg" 
+    },
+    { 
+      "id":9,
+      "nombre": "Gorro ETH", 
+      "precio": 8,
+      "img": "../Pages/Img/ethgorro.jpg" 
+    },
+    { 
+      "id":10,
+      "nombre": "Gorro HODL", 
+      "precio": 8,
+      "img": "../Pages/Img/hodl.jpg" 
+    },
+    { 
+      "id":11,
+      "nombre": "Gorro CRYPTO", 
+      "precio": 8,
+      "img": "../Pages/Img/cryptogorro.jpg" 
+    },
+    { 
+      "id":12,
+      "nombre": "Gorro SHIBA", 
+      "precio": 8,
+      "img": "../Pages/Img/GorroSH.jpg" 
+    },
+    { 
+      "id":13,
+      "nombre": "LLavero ETH", 
+      "precio": 5,
+      "img": "../Pages/Img/llaverosEth.jpg" 
+    },
+    { 
+      "id":14,
+      "nombre": "Llavero BTC", 
+      "precio": 5,
+      "img": "../Pages/Img/llaverosB.jpg" 
     }
   ]
