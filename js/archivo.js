@@ -91,6 +91,10 @@ const pintarCarrito = () => {
 	localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
+const VaciarStorage = () => {
+	localStorage.clear()
+}
+
 const pintarFooter = () => {
 	footer.innerHTML= ''
 	if(Object.keys(carrito).length === 0) {
@@ -131,8 +135,9 @@ const pintarFooter = () => {
 			}
 		});		
 	})
+}
 
-	const btnFinalizarCompra = document.getElementById('finalizar')
+const btnFinalizarCompra = document.getElementById('finalizar')
 	btnFinalizarCompra.addEventListener('click', () => {
 		swal({
 			title: "Muchas gracias!",
@@ -142,14 +147,10 @@ const pintarFooter = () => {
 		.then((willDelete) => {
 			if (willDelete) {
 				window.location.href = "merchandising.html"
-				localStorage.clear()
+				VaciarStorage()
 			}
 		});
 	})
-
-}
-
-
 
 const accionBotones = () => {
 	const botonesAgregar = document.querySelectorAll('#items .btn-info')
