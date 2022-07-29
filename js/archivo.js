@@ -137,7 +137,7 @@ const pintarFooter = () => {
 	})
 }
 
-const btnFinalizarCompra = document.getElementById('finalizar')
+/*const btnFinalizarCompra = document.getElementById('finalizar')
 	btnFinalizarCompra.addEventListener('click', () => {
 		swal({
 			title: "Muchas gracias!",
@@ -150,7 +150,7 @@ const btnFinalizarCompra = document.getElementById('finalizar')
 				VaciarStorage()
 			}
 		});
-	})
+	})*/
 
 const accionBotones = () => {
 	const botonesAgregar = document.querySelectorAll('#items .btn-info')

@@ -34,22 +34,52 @@
     </div>
 </div>
 
-<div class="principal">
-    <div id="reservas">
-        <h2>Reserva tu lugar</h2>
-        <form id="reserva">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Selecciona la fecha</label>
-                <input type="date" id="dia">            
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Nombre Completo</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
-            </div>
-            <input type="submit" value="Enviar"> <br>
-            <input type="reset" value="Limpiar formulario"> 
-        </form>
+
+<div class="principal" id="reservas">
+  <div class="card" style="width: 28rem;">
+    <img src="Img/cocktails.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Reserva tu lugar</h5>
+      <form id="reserva">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Selecciona la fecha</label>
+            <input type="date" id="dia">            
+        </div>
+        <div class="form-group">
+            <input type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre" >
+        </div>
+        <div class="form-group">
+          <input type="text" name="apellidos" id="apellidos" placeholder="Ingress su apellido" >
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder="Ingrese su email" >
+        </div>
+        <div class="form-group">
+          <input type="number" name="personas" id="personas" placeholder="Ingrese la cantidad de personas" >
+        </div>
+    </form>
+      <a href="#" class="btn btn-primary" id="btnR">Reservar</a>
     </div>
+  </div>
+
+<div class="container">
+    <hr>
+    <div class="row" id="items"></div>
+</div>
+<template id="template-reservas">
+  <div class="card" style="width: 17.5rem;">
+    <div class="card-body">
+      <h5 class="card-title">Reservas</h5>
+      <div class="card-body" style="color: black;">
+        <label for="" style="font-size: 0.8rem;">Fecha de reserva: <span id="fecha"></span></label><br>
+        <label for="" style="font-size: 0.8rem;">Nombre: <span id="nombre"></span></label><br>
+        <label for="" style="font-size: 0.8rem;">Apellido: <span id="apellido"></span></label><br>
+        <label for="" style="font-size: 0.8rem;">Email: <span id="mail"></span></label><br>
+        <label for="" style="font-size: 0.8rem;">Cantidad de personas: <span id="cantPer"></span></label>
+      </div>
+    </div>
+  </div>
+</template>
 </div>
 
 <div class="footer">
@@ -99,9 +129,8 @@
 </div>
 </div>
 
-<footer>
-    <p class="maps menuEntrada">Copyright 2022 todos los derechos reservados</p>
-</footer>
+
+<script src="../js/reservas.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -126,11 +126,12 @@ h1 {
 /*Reservas*/
 
 #reservas {
-    background-color: rgb(110, 105, 105);
-    border: solid 5px white;
-    width: 80%;
-    color: black;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
 }
+
 
 /*Merchandising*/
 
@@ -322,13 +323,6 @@ h1 {
         margin:20px;
         text-align: center;
         transition: all 0.25s;
-    }
-
-    #reservas {
-        background-color: rgb(110, 105, 105);
-        border: solid 5px white;
-        color: black;
-        width: 100%;
     }
 
     #formulario {
