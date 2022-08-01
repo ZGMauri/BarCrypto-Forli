@@ -135,9 +135,8 @@ const pintarFooter = () => {
 			}
 		});		
 	})
-}
 
-/*const btnFinalizarCompra = document.getElementById('finalizar')
+	/*const btnFinalizarCompra = document.getElementById('finalizar')
 	btnFinalizarCompra.addEventListener('click', () => {
 		swal({
 			title: "Muchas gracias!",
@@ -151,6 +150,9 @@ const pintarFooter = () => {
 			}
 		});
 	})*/
+}
+
+
 
 const accionBotones = () => {
 	const botonesAgregar = document.querySelectorAll('#items .btn-info')
